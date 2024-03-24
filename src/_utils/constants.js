@@ -1,0 +1,1 @@
+export const API_URL = "https://aetp-app-api-ce6ea7b74ba5.herokuapp.com/api";

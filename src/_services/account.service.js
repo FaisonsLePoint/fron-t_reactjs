@@ -7,7 +7,7 @@ import jwt_decode from 'jwt-decode'
  * @returns {Promise}
  */
 let login = (credentials) => {
-    return Axios.post('/auth/login', credentials)
+    return Axios.post('/users/login', credentials)
 }
 
 /**

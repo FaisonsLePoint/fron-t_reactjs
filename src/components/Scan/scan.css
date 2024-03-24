@@ -1,0 +1,12 @@
+@import "antd/dist/reset.css";
+
+/* 
+ * Je n'ai pas encore eu suffisamment le temps de customiser graphiquement antd avec du less.
+ * Il est cependant possible de le modifier comme ci-dessus.
+ * Il faut inspecter le dom, récupérer le nom de classe de l'élément du DOM puis le surcharger dans ce fichier CSS.
+ */
+
+.ant-table-title {
+  color: #f39c12;
+  background-color: #153c52;
+}

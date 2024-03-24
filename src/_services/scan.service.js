@@ -1,11 +1,11 @@
 import Axios from './caller.service'
 
 /**
- * Récupération de la liste des cocktails
+ * Récupération de la liste des scans
  * @returns {Promise}
  */
-let getAllCocktails = () => {
-    return Axios.get('/cocktails')
+let getAllScans = () => {
+    return Axios.get('/scans/list')
 }
 
 /**
@@ -13,7 +13,7 @@ let getAllCocktails = () => {
  * @param {number} cid 
  * @returns {Promise}
  */
-let getCocktail = (cid) => {
+let getScan = (cid) => {
     return Axios.get('/cocktails/'+cid)
 }
 
@@ -22,7 +22,7 @@ let getCocktail = (cid) => {
  * @param {object} cocktail 
  * @returns {Promise}
  */
-let addCocktail = (cocktail) => {
+let addScan = (cocktail) => {
     return Axios.put('/cocktails', cocktail)
 }
 
@@ -31,7 +31,7 @@ let addCocktail = (cocktail) => {
  * @param {object} cocktail 
  * @returns {Promise}
  */
-let updateCocktail = (cocktail) => {
+let updateScan = (cocktail) => {
     return Axios.patch('/cocktails/'+cocktail.id, cocktail)
 }
 
@@ -40,11 +40,11 @@ let updateCocktail = (cocktail) => {
  * @param {number} cid 
  * @returns {Promise}
  */
-let deleteCocktail = (cid) => {
+let deleteScan = (cid) => {
     return Axios.delete('/cocktails/'+cid)
 }
 
 // Déclaration des services pour import
-export const cocktailService = {
-    getAllCocktails, getCocktail, addCocktail, updateCocktail, deleteCocktail
+export const scanService = {
+    getAllScans, getScan, addScan, updateScan, deleteScan
 }

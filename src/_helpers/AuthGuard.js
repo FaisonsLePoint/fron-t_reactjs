@@ -3,7 +3,7 @@ import { accountService } from "@/_services/account.service";
 
 /**
  * Fonction de vérification de token
- * Et fermetur partie admin
+ * Et fermeture partie admin
  * 
  * @param {Object} props{children} 
  * @returns {ReactNode}

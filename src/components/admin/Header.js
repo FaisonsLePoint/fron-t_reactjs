@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import { accountService } from '@/_services';
 
@@ -8,13 +9,13 @@ const Header = () => {
     // Gestion du bouton de déconnexion
     const logout = () => {
         accountService.logout()
-        navigate('/')
+        navigate('/auth/login')
     }
 
     return (
         <div className="AHeader">
             Header Admin
-            <button onClick={logout}>Logout</button>
+            <Button type="primary" onClick={logout}>Se déconnecter</Button>
         </div>
     );
 };

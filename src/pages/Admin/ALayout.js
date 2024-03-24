@@ -1,10 +1,9 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
 
 import './admin.css'
 
 import Header from '@/components/admin/Header'
-import SideMenu from '@/components/admin/SideMenu'
+import TabMenu from '@/components/admin/TabMenu'
 
 
 const ALayout = () => {
@@ -12,8 +11,7 @@ const ALayout = () => {
         <div className="ALayout">
             <Header/>
             <div id="admin">
-                <SideMenu/>
-                <div id="admin_body"><Outlet/></div>
+                <TabMenu/>
             </div>
         </div>
     );

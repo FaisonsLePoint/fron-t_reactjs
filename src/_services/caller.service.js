@@ -1,9 +1,10 @@
 import axios from 'axios'
 import { accountService } from './account.service'
+import { API_URL } from "../_utils/constants";
 
 // Paramétrage de base d'axios
 const Axios = axios.create({
-    baseURL: 'http://localhost:8888'
+    baseURL: API_URL
 })
 
 
